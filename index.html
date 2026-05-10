@@ -618,6 +618,13 @@
 		</style>
 	</noscript>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<style>
+		html, body {
+			scroll-behavior: auto !important;
+			-webkit-overflow-scrolling: touch !important;
+			overflow-x: hidden !important;
+		}
+	</style>
 	<meta name="generator" content="WP Rocket 3.19.1.2"
 		data-wpr-features="wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_lazyload_iframes wpr_preconnect_external_domains wpr_oci wpr_image_dimensions wpr_minify_css wpr_cdn wpr_preload_links wpr_desktop">
 </head>
@@ -3755,28 +3762,7 @@
 				<div class="elementor-element elementor-element-e0605ac elementor-absolute elementor-widget elementor-widget-html"
 					data-id="e0605ac" data-element_type="widget" data-e-type="widget" data-settings="{"
 					_position":"absolute"}"="" data-widget_type="html.default">
-					<script data-minify="1" src="js/gsap.min.js" onload="nowprocket()"></script>
-					<script data-minify="1" src="js/ScrollTrigger.min.js" onload="nowprocket()"></script>
 
-					<script type="rocketlazyloadscript">
-    const elementos = document.querySelectorAll(".scroll-left, .scroll-right, .scroll-top, .scroll-bottom, .blur, .lista .elementor-icon-list-item, .faq .e-n-accordion-item");
-    const posicaoScroll = window.innerHeight * 0.5;
-    
-    function fadeScroll(){
-        elementos.forEach(elemento =>{
-            const elementoTop = elemento.getBoundingClientRect().top- posicaoScroll;
-            
-            if(elementoTop < 320){
-                elemento.classList.add("ativo");
-            }
-            else {
-                elemento.classList.remove("ativo");
-            }
-        });
-    }
-    
-    window.addEventListener("scroll", fadeScroll);
-</script>
 				</div>
 				<div class="elementor-element elementor-element-b151c70 elementor-absolute elementor-widget elementor-widget-html"
 					data-id="b151c70" data-element_type="widget" data-e-type="widget" data-settings="{"
@@ -3894,10 +3880,7 @@
 	<script type="rocketlazyloadscript" data-minify="1"
 		data-rocket-src="https://guiadogui.com/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=1769713205"
 		id="hello-theme-frontend-js" data-rocket-defer="" defer=""></script>
-	<script src="https://guiadogui.com/wp-content/plugins/mousewheel-smooth-scroll/js/lenis.min.js?ver=1.1.19"
-		id="lenis-js" defer=""></script>
-	<script src="https://guiadogui.com/wp-content/uploads/wpmss/lenis-init.min.js?ver=1769663525" id="lenis-init-js"
-		defer=""></script>
+
 	<script type="rocketlazyloadscript"
 		data-rocket-src="https://guiadogui.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.0.5"
 		id="elementor-webpack-runtime-js" data-rocket-defer="" defer=""></script>
